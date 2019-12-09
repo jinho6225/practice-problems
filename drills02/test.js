@@ -5,12 +5,12 @@ var testVals = [{
   `,
   testVals: {
     inputs: [
-        [['how','much','wood','would','a','wood','chuck','chuck','if','a','wood','chuck','could','chuck','wood'],'wood'], 
+        [['how','much','wood','would','a','wood','chuck','chuck','if','a','wood','chuck','could','chuck','wood'],'wood'],
         [['who','what','who','when','why','who','what','how'],'who'],
         [['someone','is','in','the','kitchen','with','dina'],'taco']
-      
+
     ],
-    outputs:    
+    outputs:
     [  4,
        3,
        0
@@ -24,7 +24,7 @@ var testVals = [{
     `,
   testVals: {
     inputs: [
-        [['sam','I','am','called','dude','my','car']], 
+        [['sam','I','am','called','dude','my','car']],
         [['who','said','this','was','a','wet','bar','on','alligators']],
     ],
     outputs: [
@@ -33,12 +33,12 @@ var testVals = [{
   },
   functionToTest: 'wordLengths'
 }, {
-  question: `getMinMaxMean: given an array of numbers, 
-  get the minimum, maximum, and mean numbers.  
+  question: `getMinMaxMean: given an array of numbers,
+  get the minimum, maximum, and mean numbers.
   Return them as an object.
   Mean is another word for average
   For example: [3,1,9,12,4]
-  returns: {min: 1, max: 12, mean: 25.8}`,
+  returns: {min: 1, max: 12, mean: 5.8}`,
   testVals: {
     inputs: [
       [[5,-5,15,25,12,2]],
