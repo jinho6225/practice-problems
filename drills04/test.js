@@ -1,6 +1,3 @@
-
-
-
 var testVals = [{
   question: `changeElements: Change any element with a given class (for example "numConvert")
         grab their text, which will be a number in word form (ie one, three, nine)
@@ -10,11 +7,11 @@ var testVals = [{
   `,
   testVals: {
     inputs: [
-        ['.numConvert'], 
+        ['.numConvert'],
         ['.otherConvert'],
-      
+
     ],
-    outputs:    
+    outputs:
     [  undefined,
        undefined,
     ],
@@ -44,7 +41,7 @@ var testVals = [{
     For example, if the text of the element was "yo", it would be changed to "yohello"`,
   testVals: {
     inputs: [
-        ['.helloElements', 'hello'], 
+        ['.helloElements', 'hello'],
         ['.moocow', 'moooo'],
     ],
     outputs: [
@@ -92,13 +89,13 @@ var testVals = [{
       {
         message: 'All elements with a class of .noEle should have a class of "nope".  There were no such elements so there should be none',
         test: ()=> {
-          return $(".noEle.nope").length === 0  
+          return $(".noEle.nope").length === 0
         }
       },
       {
         message: 'The element with an id of oneElement should also have a class of invert',
         test: ()=> {
-          return $("#oneElement.invert").length === 1 
+          return $("#oneElement.invert").length === 1
         }
       }
     ]
