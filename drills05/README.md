@@ -14,10 +14,10 @@
     -      { type: 'charge', source: 'McDonalds', amount: '40.00'},
     -      { type: 'charge', source: 'Olive Garden', amount: '31.20'},
     -      { type: 'charge', source: 'Heart Doctor', amount: '1000.00'}
-    -    ]
+  - ]
   -  <img src="outputscreen2.png">
-  - Return an object with the total amount of charges 
-  and the total amount charges and cash advances in an object, like this: 
+  - Return an object with the total amount of charges
+  and the total amount charges and cash advances in an object, like this:
   	- { charge: 27.50, 'cash advance': 40.10 }
   - Contain each section in an element with a class of "testOutput"
   - Convenient classes exist in the test.css file for you to use
