@@ -1,6 +1,6 @@
 ## math combo
 
-Build a function, cocococombomath, that takes 5 numbers as parameters.  
+Build a function, cocococombomath, that takes 5 numbers as parameters.
 It:
 	- multiplies the 1st number x the 2nd number
 	- the result of that, it adds the 3rd number
