@@ -1,3 +1,4 @@
+/*
 ## Bigger words
 
 Build a function that takes in a string and an array of strings. The function should output an array of strings that are longer than the single input string.
@@ -9,4 +10,18 @@ Build a function that takes in a string and an array of strings. The function sh
 - Example:
 	- `var myArray = ['bug', 'insect', 'mammal', 'reptile', 'mammoth', 'turtles'];`
 	- `biggerWords('whales', myArray);`
-	- Output - `['reptile', 'mammoth', 'turtles']`
+  - Output - `['reptile', 'mammoth', 'turtles']`
+  */
+
+function biggerWords(str, arr) {
+  let newArr = [];
+  arr.forEach((x) => {
+    if (x.length > str.length) {
+      newArr.push(x)
+    }
+  })
+  return newArr
+}
+
+var myArray = ['bug', 'insect', 'mammal', 'reptile', 'mammoth', 'turtles'];
+biggerWords('whales', myArray)

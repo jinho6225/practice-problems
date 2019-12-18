@@ -1,3 +1,4 @@
+/*
 ## Igpay Atinlay
 
 Build a function that will translate text into "Pig Latin" Take the first consonant and move it to the end of a word and then affix "ay" to the end of that word."
@@ -8,7 +9,7 @@ Build a function that will translate text into "Pig Latin" Take the first conson
 	- Example:
 		- `var myString = "Hello my name is Stu"`
 		- `translate(myString);
-		- Output - `"ellohay ymay amenya siay tusay"`
+		- Output - `"ellohay ymay ameya siay tusay"`
 
 #### Making it better!
 
@@ -18,3 +19,18 @@ Build a function that will translate text into "Pig Latin" Take the first conson
 - Also try maintaining capitalization of words that are capitalized in your input string.
 	- Example:
 		- `"Hello there"` would be `"Ellohay heretay"`
+*/
+function translate(string) {
+  var arr = string.split(' ')
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].charAt(0) === arr[i][0].toUpperCase()) {
+      arr[i] = arr[i][1].toUpperCase() + arr[i].substring(2) + arr[i][0].toLowerCase() + 'ay'
+    } else {
+      arr[i] = arr[i].substring(1) + arr[i][0] + 'ay'
+    }
+  }
+  return arr.join(' ')
+}
+
+var myString = "Hello my name is Stu"
+translate(myString)
