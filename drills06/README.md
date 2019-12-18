@@ -1,10 +1,10 @@
-- removeClassFromElement: 
+<!-- - removeClassFromElement: 
   - create a function that takes in an element, and the class to remove from that element.
   - It should use the removeClass method, not toggle
 
 - toggleClassOnElement: 
   - create a function that takes in an element and a class.
-  - It toggles the class on the target element
+  - It toggles the class on the target element -->
 
 - hideElements: 
   - create a function that takes in two parameters

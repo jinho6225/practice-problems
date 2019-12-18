@@ -19,5 +19,7 @@
   - Return an object with the total amount of charges
   and the total amount charges and cash advances in an object, like this:
   	- { charge: 27.50, 'cash advance': 40.10 }
+
   - Contain each section in an element with a class of "testOutput"
+
   - Convenient classes exist in the test.css file for you to use

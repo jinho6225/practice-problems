@@ -1,33 +1,37 @@
 function populateRecords(obj){
-  tableA(obj);
+
+  makeTable(obj);
   let newObj = {};
-  var totalCharge = 0;
-  var totalCash = 0;
+  var chargeTotal = 0;
+  var cashTotal = 0;
   for (let i = 0; i < obj.length; i++) {
     if (obj[i].type === 'charge') {
-      totalCharge = totalCharge + Number(obj[i].amount);
+      chargeTotal = chargeTotal + Number(obj[i].amount)
     }
     if (obj[i].type === 'cash advance') {
-      totalCash = totalCash + Number(obj[i].amount);
+      cashTotal = cashTotal + Number(obj[i].amount)
     }
-    newObj['charge'] = totalCharge;
-    newObj['cash advance'] = totalCash;
+    newObj['charge'] = chargeTotal;
+    newObj['cash advance'] = cashTotal;
   }
   return newObj
 }
 
-function tableA(objlist) {
-  // get the reference for the body
-  var base = $('#testArea')
-  base.append(`<table></table>`)
-  var tableArr = $('table');
-  for (let i = 0; i < tableArr.length; i++) {
-    $(tableArr[i]).attr('class', 'class '+[i])
+function makeTable(objlist) {
+  var area = $('#testArea')
+  area.append(`<table></table>`)
+  var table = $('table')
+  for (let i = 0; i < table.length; i++) {
+    $(table[i]).attr('class', 'class ' + [i])
   }
-  tableArr.html(`<tr class="th"></tr>`)
-    $('.th').append(`<th class="type">${'TYPE'}</th>`)
-    $('.th').append(`<th class="source">${'SOURCE'}</th>`)
-    $('.th').append(`<th class="amount">${'AMOUNT'}</th>`)
+
+  table.html(`<tr class="th"></tr>`)
+  $('.th').append(`<th class="type">${'TYPE'}</th>`)
+  $('.th').append(`<th class="source">${'SOURCE'}</th>`)
+  $('.th').append(`<th class="amount">${'AMOUNT'}</th>`)
+  // for (let i in objlist[0]) {
+  //   $('tr').append(`<th class=${[i]}>${[i]}</th>`)
+  // }
 
   for (var obj of objlist) {
     const typeE = `<td>${obj.type}</td>`
@@ -36,10 +40,38 @@ function tableA(objlist) {
 
     const rowElement = $('<tr>');
     rowElement.append([typeE, sourceE, amountE]);
-    tableArr.append(rowElement);
+    table.append(rowElement);
   }
-  $('#testArea').append(tableArr);
-
+  $('#testArea').append(table);
   $('#testArea *').addClass('testOutput');
 
+  // for (let i = 0; i < obj.length; i++) {
+  //   table.append(`<tr class=${[i]}>`)
+  //   for (let key in obj[i]) {
+  //     $(`.${[i]}`).append(`<td>${obj[i][key]}</td>`)
+  //   }
+  // }
+
+  // $('#testArea *').addClass('testOuput')
+  // $('tr').addClass('transactionRecord')
+
+  // $('.transactionRecord > *').addClass('transactionRecord')
 }
+
+
+/*
+
+  <tr>
+    <td>USA</td>
+    <td>Washington, D.C.</td>
+    <td>309 million</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>Sweden</td>
+    <td>Stockholm</td>
+    <td>9 million</td>
+    <td>Swedish</td>
+  </tr>
+</table>
+*/
