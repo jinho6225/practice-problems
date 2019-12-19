@@ -3,16 +3,16 @@
 Create a function, sort_object_list_by_field(), that does the following:
 - Takes a list of objects, and returns an array of those objects, sorted by an arbitrary property
 
-#### Input: 
+#### Input:
 - input_array: an array of objects
 - sort_field: property to sort by
 
-#### Output: 
+#### Output:
 - output_array, an array sorted by the given field of each object
 
 #### Example:
 <pre>
-var input_array = 
+var input_array =
 [
 	{name: 'John', age:42, gender:'M'},
 	{name: 'Jack', age:34, gender:'M'},
@@ -21,7 +21,7 @@ var input_array =
 ]</pre>
 
 output = sort_object_list_by_field(input_array, age);
-console.log(output); //outputs 
+console.log(output); //outputs
 <pre>[
 	{name: 'Jack', age:34, gender:'M'},
 	{name: 'Michael',age:40, gender: 'M'},
