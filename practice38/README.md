@@ -5,7 +5,7 @@
    - the first number is the set of letters that can be accessed.  For example, 2 is a, b, or c
    - the next same numbers correspond to how many times the number will be pressed.  This Indicates which letter will be used.  For example, 22 is "b", 2 is "a", 222 is "c"
  - if 2 letters need to be sent that are on the same number, a space will separate them
-   - for example if you want to send "c" and then "a", it would be "222 22".  "abc" would be "2 22 222"
+   - for example if you want to send "c" and then "a", it would be "222 2".  "abc" would be "2 22 222"
    
 
 ### number reference on most phones
