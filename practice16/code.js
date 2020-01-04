@@ -8,7 +8,7 @@ Create a function definition that achieves the output with the given input.
 <a href="http://jsbin.com/jifawu/edit?html,js,output" target="_blank">Solution Set</a>
 */
 
-function factor_of_sequence(num) {
+function factor_of_sequence(number) {
     let newArr = [];
     for (let i = 2; i < 13; i++) {
         if (i % 3 === 0) {
